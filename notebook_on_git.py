@@ -11,11 +11,20 @@
 # MAGIC
 # MAGIC
 # MAGIC --drop table gl1_b.s4_acdoca_shallow_clone;
-# MAGIC create table gl1_b.s4_acdoca_shallow_clone shallow clone gl1_b.s4_acdoca;
+# MAGIC create table if not exists gl1_b.s4_acdoca_shallow_clone shallow clone gl1_b.s4_acdoca;
 # MAGIC
 # MAGIC
 # MAGIC
 
 # COMMAND ----------
 
+# MAGIC %md 
+# MAGIC #Hello World 
 
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC
+# MAGIC #Hello again 
+# MAGIC ## Hello
+# MAGIC
