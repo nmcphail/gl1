@@ -7,9 +7,15 @@
 # MAGIC create schema if not exists gl1_g comment 'GL1 Gold Layer';
 # MAGIC create table if not exists gl1_b.s4_acdoca (c1 int);
 # MAGIC
+# MAGIC insert into gl1_b.s4_acdoca (c1 ) values (1);
 # MAGIC
 # MAGIC
-# MAGIC create table gl1_b.s4_acdoca_shallow_clone shallow clone gl1_b.s4_acdoca
+# MAGIC --drop table gl1_b.s4_acdoca_shallow_clone;
+# MAGIC create table gl1_b.s4_acdoca_shallow_clone shallow clone gl1_b.s4_acdoca;
 # MAGIC
 # MAGIC
 # MAGIC
+
+# COMMAND ----------
+
+
